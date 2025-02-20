@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenPath Diagnostic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <span class="contact-info">📞 +91 9593966583 </span>
+        <span class="contact-info">
+            📍 <a href="https://maps.app.goo.gl/yAVbzTLz71MTYadTA" target="_blank">Lowada, Debra, Pachim Medenipur, 721136</a>
+        </span>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="GreenPath Diagnostic Logo" class="logo">
+            <h1>
+                <span class="green">Green</span><span class="path">Path</span>
+                <span class="diagnostic">Diagnostic</span>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Your Health, Our Responsibility</h1>
+        <h2 style="text-align: center; color: #453407;">আপনার স্বাস্থ্য, আমাদের দায়িত্ব</h2>
+        <button id="googleSignInBtn">Book Now</button>
+    </section>
+
+    
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="blood_test.jpg" alt="Blood Test">
+                <h3>Advanced Pathology</h3>
+            </div>
+            <div class="service-card">
+                <img src="x_ray.jpg" alt="X-Ray">
+                <h3>X-Ray</h3>
+            </div>
+            <div class="service-card">
+                <img src="ecg.jpg" alt="Ultrasound">
+                <h3>E.C.G</h3>
+            </div>
+            <div class="service-card">
+                <img src="biopsy.jpg" alt="ECG">
+                <h3>Biopsy</h3>
+            </div>
+            <div class="service-card">
+                <img src="pft.jpg" alt="COVID-19 Testing">
+                <h3>P.F.T</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="doctors">
+        <h2>Meet Our Doctors</h2>
+        <div class="doctors-container">
+            <div class="doctor-card">
+                <img src="doctor.jpg" alt="Dr. Ayesha Khan">
+                <h3>Dr. Ayesha Khan</h3>
+                <p>Radiologist</p>
+            </div>
+            <div class="doctor-card">
+                <img src="doctor.jpg" alt="Dr. Imran Ahmed">
+                <h3>Dr. Imran Ahmed</h3>
+                <p>Pathologist</p>
+            </div>
+            <div class="doctor-card">
+                <img src="doctor.jpg" alt="Dr. Sarah Malik">
+                <h3>Dr. Sarah Malik</h3>
+                <p>General Physician</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="booking">
+        <h2>Book an Appointment</h2>
+        <form id="bookingForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+    
+            <label for="sex">Sex:</label>
+            <select id="sex" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+    
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="1" required>
+    
+            <label for="service">Select Service:</label>
+            <select id="service" required onchange="updateTypeOptions()">
+                <option value="">Select Service</option>
+                <option value="pathology">Advanced Pathology</option>
+                <option value="x-ray">X-Ray</option>
+                <option value="ecg">E.C.G</option>
+                <option value="biopsy">Biopsy</option>
+                <option value="pft">P.F.T</option>
+            </select>
+    
+            <label for="serviceType">Type of Service:</label>
+            <select id="serviceType" required>
+                <option value="">Select Service Type</option>
+            </select>
+    
+            <button type="submit">Book Now</button>
+        </form>
+        <p id="bookingMessage"></p>
+    </section>
+    
+    
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: <a href="https://www.google.com/maps?q=123+Green+Street" target="_blank">123 Green Street, City, Country</a></p>
+        <p>Phone: +123 456 7890</p>
+        <p>Email: info@greenpathdiagnostic.com</p>
+    </section>
+
+    <section id="ads">
+        <h2>Advertisements</h2>
+        <div class="ad">
+            <p>Special Discount on Full Body Check-up!</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 GreenPath Diagnostic. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+</body>
+</html>
